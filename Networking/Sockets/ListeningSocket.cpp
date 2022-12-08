@@ -9,5 +9,5 @@ HDE::ListeningSocket::ListeningSocket(int domain, int service, int protocol, int
 
 void HDE::ListeningSocket::start_listening()
 {
-    listening = listen(get_connection(), bklog);
+    listening = listen(get_sock(), bklog);
 }
